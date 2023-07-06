@@ -1,26 +1,44 @@
 body {
     width: 100vw;
     margin: 0;
+    font-family: sans-serif;
 }
 
-/* * {
-    border: dotted red 1px;
-} */
-
-header {
+header,
+footer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
     color: #F9FAF8;
+
+}
+
+header {
+    justify-content: space-between;
+}
+
+footer {
+    justify-content: center;
+    height: 100px;
+    font-size: 18px;
+    padding: 0 100px;
+}
+
+.logo-container {
+    display: flex;
+    margin-left: 50px;
+    padding-top: 8px;
+    align-items: center;
+    gap: 12px;
     font-size: 24px;
+    font-weight: 700;
 }
 
 .logo {
     width: auto;
     height: 64px;
     flex-shrink: 0;
-    margin-left: 50px;
+
 }
 
 .links {
@@ -28,10 +46,13 @@ header {
     list-style: none;
     gap: 15px;
     margin-right: 50px;
+    font-size: 18px;
 }
 
-li {
+li,
+a {
     text-decoration: none;
+    color: #F9FAF8;
 }
 
 .description-container {
@@ -40,14 +61,25 @@ li {
     align-items: center;
     color: #F9FAF8;
     background-color: #1F2937;
-    padding: 50px 50px;
-    gap: 40px;
+    padding: 100px 50px;
 }
 
 .description-text {
     flex: 1;
     max-width: 400px;
     margin-left: auto;
+    padding: 8px;
+}
+
+.heading {
+    font-size: 48px;
+    font-weight: 1000;
+    margin: unset;
+}
+
+.description-text p {
+    font-size: 18px;
+    margin: unset;
 }
 
 .ship-image {
@@ -61,8 +93,96 @@ li {
 .sign-up {
     background-color: #3882F6;
     color: #F9FAF8;
+    font-size: 18px;
     font-weight: 700;
-    border: none;
-    border-radius: 4px;
-    padding: 4px 20px;
+    border: unset;
+    border-radius: 6px;
+    padding: 6px 25px;
+    margin-top: 8px;
+}
+
+.information-container {
+    padding: 50px;
+    text-align: center;
+}
+
+.information-heading {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.information-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 150px;
+    height: 250px;
+    margin: 18px;
+}
+
+.card-image {
+    height: 150px;
+    width: 150px;
+    border: solid 3px #3882F6;
+    border-radius: 12px;
+    background-color: #F9FAF8;
+}
+
+.quotation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E7EB;
+}
+
+blockquote {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    margin: 100px 0;
+}
+
+.quote-author {
+    align-self: flex-end;
+    font-size: 28px;
+    font-weight: 900;
+    font-style: normal;
+    padding-right: 50px;
+}
+
+.action-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F9FAF8
+}
+
+.white-border {
+    border: solid 1px #F9FAF8;
+    flex-shrink: 0;
+    margin: 0 30px;
+}
+
+.blue-box {
+    display: flex;
+    width: 70%;
+    height: 150px;
+    background-color: #3882F6;
+    margin: 70px 0;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 6px;
+}
+
+.action-text h2,
+.action-text p {
+    margin: 0 30px;
+    padding: 2px;
 }
